@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include "../template.h"
 
 using namespace std;
 
 void partA() {
-    
+
 }
 
 void partB() {
@@ -19,5 +19,5 @@ int main(int argc, char **argv) {
     auto start = chrono::high_resolution_clock::now();
     argv[1][0] == 'A' ? partA() : partB();
     auto end = chrono::high_resolution_clock::now();
-    cout << chrono::duration_cast<chrono::microseconds>(end - start).count() << "microseconds" << endl;
+    cout << chrono::duration_cast<chrono::microseconds>(end - start).count() << "us" << endl;
 }

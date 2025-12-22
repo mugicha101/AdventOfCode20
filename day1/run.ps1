@@ -5,7 +5,7 @@ if (Test-Path -Path './a.exe') {
 if (Test-Path -Path './main.txt') {
     Remove-Item ./main.txt
 }
-g++ -O3 -fpermissive ./main.cpp
+g++ -O3 -fpermissive ./main.cpp ../template.h -o ./a.exe
 if (Test-Path -Path './output.txt') {
     Remove-Item ./output.txt
 }
