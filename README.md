@@ -1,0 +1,1 @@
+to run code, go to day directory and run `../run.ps1 <A/B>` (windows only sorry)
