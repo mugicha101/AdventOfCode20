@@ -57,3 +57,18 @@ const ll INF = LLONG_MAX >> 2;
   for (auto& _e : x) cin >> _e;
 #define mp(a, b) make_pair(a, b)
 #define pause() this_thread::sleep_for(10ms)
+
+using ui = __uint128_t;
+using bi = __int128_t;
+
+template<typename T>
+string i2s(T v) {
+  string res;
+  while (v) {
+    res += ('0' + (char)(v % 10));
+    v /= 10;
+  }
+  reverse(all(res));
+  if (res.empty()) res += '0';
+  return res;
+}

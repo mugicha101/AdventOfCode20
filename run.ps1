@@ -2,9 +2,6 @@ param([char]$part='A')
 if (Test-Path -Path './a.exe') {
     Remove-Item ./a.exe
 }
-if (Test-Path -Path './main.txt') {
-    Remove-Item ./main.txt
-}
 g++ -O3 -fpermissive ../main.cpp ../template.h ./code.cpp -o ./a.exe
 if (Test-Path -Path './output.txt') {
     Remove-Item ./output.txt
